@@ -51,7 +51,7 @@ def JJView(request):
 def addJJItem(request):
     new_JJItem = JJItem(content = request.POST['content'])
     new_JJItem.save()
-    return HttpResponseRedirect("/jibbrjabbrmain/")
+    return HttpResponseRedirect("/")
 
 conditional = False
 def saveStoryCheck(conditional):
