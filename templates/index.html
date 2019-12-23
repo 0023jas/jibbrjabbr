@@ -1,0 +1,15 @@
+<h1> {{JJ_Story.storyURL}} </h1>
+<h1> {{JJ_Story.storyTitle}} </h1>
+<img src="{{JJ_Story.storyImg}}">
+
+
+<ul>
+    {% for JJItem in all_JJ_Items %}
+    <li>{{JJItem.content}}</li>
+    {% endfor %}
+</ul>
+
+<form action="/addJJItem/" method="post">{% csrf_token %}
+    <input type="text" name="content"/>
+    <input type="submit" value="add"/>
+</form>
