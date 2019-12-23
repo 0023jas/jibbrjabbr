@@ -1,5 +1,6 @@
-django
+django_heroku==0.3.1
+Django==1.11.20
+beautifulsoup4==4.8.1
 gunicorn
-django-heroku
 python-dotenv==0.10.3
 whitenoise
